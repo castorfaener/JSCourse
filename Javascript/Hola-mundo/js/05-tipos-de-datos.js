@@ -21,6 +21,8 @@ var numero_falso = "33";
 console.log(numero_entero + numero_falso);
 
 Number(numero_falso);			//convierte el caracter a numero
+numero_entero = parseInt(numero_falso);			//convierte el caracter a numero
+
 
 console.log(numero_entero + Number(numero_falso));
 
