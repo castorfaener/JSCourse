@@ -9,9 +9,9 @@ var numero = parseInt(prompt("Introduce el numero"));
 
 
 document.write("<h1>Los divisores del numero " + numero +" son:</h1>");
-for(var i=0; i=numero; i++){
+for(var i=1; i=numero; i++){
 	if(numero%i == 0){
-		document.write(i);
-		document.write("<br/>");
+		console.log(i);
+		console.log("<br/>");
 	}
 }
