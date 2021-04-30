@@ -1,7 +1,7 @@
 'use strict'
 
 
-//Transformacion de textos
+//Funciones
 
 var numero = 444;
 var texto1 = "Bienvenido al curso de Javascript de Victor Robles";
@@ -30,4 +30,31 @@ console.log(busqueda);
 
 var busqueda = texto1.search("curso");			//Devuelve la posicion en la que inicia la palabra buscada
 console.log(busqueda);
+
+var busqueda2 = texto1.substr(14,4);					//Devuelve el total de los caracteres del segundo parametro empezando por la posicion del primer parametro y 
+
+
+var busqueda3 = texto1.charAt(14);				//Indica el caracter de la posicion pasada por parametro
+console.log(busqueda3);
+
+var busqueda4 = texto1.startsWith("Bienv");			//booleano para conocer si la cadena empieza por el String pasado como parametro
+console.log(busqueda4);
+
+var busqueda5 = texto1.endsWith("Robles");			//booleano para conocer si la cadena termina por el String pasado como parametro
+console.log(busqueda5);
+
+var busqueda6 = texto1.includes("Javascript");			//booleano para conocer si en la cadena se encuentra el String pasado como parametro
+console.log(busqueda5);
+
+var remplazo = texto1.replace("Javascript", "Kotlin");			//Sustituye el primer String por el segundo dentro de la cadena
+console.log(remplazo);
+
+var corte = texto1.slice(14,22);			//Recorta la cadena entre las posiciones indicadas
+console.log(corte);
+
+var troceado = texto1.split(" ");			//Separa los conjuntos del array separados por el caracter pasado como parametro y los introduce en un Array
+console.log(troceado);						//En este caso = ["Bienvenido" ,"al","curso" ,"de", "Javascript" ,"de" ,"Victor" ,"Robles"]
+
+var trimeado = texto1.trim();			//Elimina los espacios iniciales y finales de la cadena
+console.log(trimeado);						
 
