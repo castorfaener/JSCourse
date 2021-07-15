@@ -26,3 +26,13 @@ localStorage.setItem("usuario", JSON.stringify(usuario));
 var user = JSON.parse(localStorage.getItem("usuario"));
 
 console.log(user);
+document.querySelector('#peliculas').append(" "+user.web+" ");
+
+
+//Borrar objeto de local Storage
+
+localStorage.removeItem("usuario");
+
+//Borrar todos los datos del local Storage
+
+localStorage.clear();
