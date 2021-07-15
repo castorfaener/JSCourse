@@ -21,8 +21,8 @@ caja.style.color = "white";
 
 var todosLosDivs = document.getElementsByTagName("div");
 
-todosLosDivs[2].style.background="green"
-;
+todosLosDivs[2].style.background="green";
+todosLosDivs[1].style.background="yellow";
 
 console.log(todosLosDivs);
 

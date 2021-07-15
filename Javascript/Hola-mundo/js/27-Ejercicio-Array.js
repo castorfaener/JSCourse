@@ -54,3 +54,6 @@ if(indiceBuscado>=0){
 
 console.log(indiceBuscado);
 
+console.timeLog();
+
+
