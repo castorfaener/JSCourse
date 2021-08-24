@@ -19,10 +19,50 @@
                 background: red;
                 cursor: pointer;
             }*/
+
+            input{
+                width: 300px;
+                padding: 10px;
+                font-size: 20px;
+            }
+            #datos{
+                border: 4px dashed black;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                margin-top: 10px;
+                display: none;
+            }
+
+            #sigueme{
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                display: block;
+                background: yellow;
+                opacity: 0.3;
+                border-radius: 999px; 
+                border:3px black;
+
+            }
+
+
         </style>
     </head>
     <body>
         <h1>Aprendiendo JQuery - Eventos</h1>
+
+        <div id="sigueme"></div>
+
+        <form>
+            <input type="text" id="nombre" />
+        </form>
+        <div id="datos"></div> 
+
+        <br>
+
+
+
         <div id="caja">Soy una caja</div>
     </body>
 </html>
