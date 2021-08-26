@@ -19,8 +19,26 @@ $(document).ready(function(){
             name: $('input[name="name"]').val(),
             web: $('input[name="web"]').val()        };
 
+            /*
         $.post($(this), usuario, function(response){
         console.log(response);
+        });
+        */
+
+        $.ajax({
+            type: 'POST', 
+            url: $(this).attr("action"),
+            data: usuario,
+            beforeSend: function(){
+                console.log("Enviando usuario...");
+            },
+            success: function(response){
+                console.log(response);
+            },
+            error: function(){
+                console.log("Ha ocurrido un error");
+            },
+            timeout: 1000
         });
 
     });
