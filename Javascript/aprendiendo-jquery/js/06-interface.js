@@ -15,7 +15,34 @@ $(document).ready(function(){
                 console.log("Ha cambiado la lista");
             }
     });
+
+    //Drop  
+    $("#elemento_movido").draggable();
+    $("#area").droppable({
+        drop: function(){
+            console.log("Has soltado algo dentro del area");
+        }
+    });
+
+    //Efectos
+    $("#mostrar").click(function(){
+        $(".caja_efectos").toggle("fade");
+    });
     
+    //Tooltip
+    $(document).tooltip();
+
+    //Dialog
+    
+    $("#lanzar_popup").click(function(){
+        $("#popup").dialog();
+    });
+
+    //Datepicker
+    $("#calendario").datepicker();
+
+    //Tabs
+    $("#pestanas").tabs();
     
 
 });

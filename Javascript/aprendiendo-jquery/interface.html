@@ -13,11 +13,11 @@
         <style>
             .elemento{
                 width: 300px;
-                height: 200px;
+                height: 300px;
                 border: 4px solid black;
-                background: lightblue;
-                margin: 20px;
-                float: left;
+                background: pink;
+                float: none;
+                display: none;
             }
 
             .lista_seleccionable li{
@@ -30,11 +30,71 @@
 
             ul .ui-selecting{background: green;}
             ul .ui-selected{background: lightgreen;}
+
+            #elemento_movido{
+                width: 100px;
+                height: 100px;
+                border: 4px solid red;
+            }
+
+            #area{
+                width: 300px;
+                height: 300px;
+                border: 4px solid green;
+            }
         </style>
         
     </head>
     <body>
         <h1>Aprendiendo JQueryUI - Interface</h1>
+        <hr/>
+        <button id="lanzar_popup">Lánzame</button>
+        <h3>Cuadros de dialogo</h3>
+
+        <div id="popup" title="¿Estas seguro?" style="display:none">
+            <p>
+                Si continuas en el curso aprenderas mucho de javascript
+            </p>
+        </div>
+
+        <hr/>
+        
+        <h3>Calendario</h3>
+
+        <input type="text" id="calendario"/>
+
+        <hr/>
+            <h3>Pestañas</h3>
+
+            <div id="pestanas">
+                <ul>
+                    <li><a href="#tabs-1">Pestaña 1</a></li>
+                    <li><a href="#tabs-2">Pestaña 2</a></li>
+                    <li><a href="#tabs-3">Pestaña 3</a></li>
+                </ul>
+                <div id="tabs-1">Hola soy la primera pestaña</div>
+                <div id="tabs-2">Hola soy la segunda pestaña</div>
+                <div id="tabs-3">Hola soy la tercera pestaña</div>
+            </div>
+        <hr/>
+
+        <div id="popup" title="¿Estas seguro?" style="display:none">
+            <p>
+                Si continuas en el curso aprenderas mucho de javascript
+            </p>
+        </div>
+        
+
+        <hr/>
+
+        <button id="mostrar">Mostrar</button>
+        
+        <div class="caja_efectos elemento"></div>
+
+        <div id="elemento_movido"></div>
+        <br/>
+        <div id="area"></div>
+        <br/>
 
         <ul class="lista_seleccionable">
             <li>GTA V</li>
